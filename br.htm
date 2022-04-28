@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Bohemian Rhapsody</title>
+</head>
+<body>
+    <div class="menu-right">
+<p>
+        Vocal
+    <br />
+        Piano
+
+    <br />
+        Guitar
+    </p>
+</div>
+<div class="menu-left">
+    <img src="media/br.PNG" width="600px" height="779px">
+</div>
+</body>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica, "Franklin Gothic", sans-serif;
+    }
+
+body {
+    background-color: black;
+}
+    div {
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 25%;
+        height: 50%;
+    }
+
+    p {
+        display: block;
+        position: relative;
+        content: "";
+        top: 80px;
+        left: 0;
+        height: 40px;
+        width: 240px;
+        font-size: 100px;
+        line-height: 200px;
+    }
+
+    .menu-left,
+    .menu-right {
+        width: 50%;
+        height: 100vh;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+       
+        z-index: -1;
+    }
+
+    .menu-right {
+        right: -50%;
+        background: black;
+    }
+
+    .menu-left {
+        left: -50%;
+        background: white;
+    }
+
+
+</style>
+<style>
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
